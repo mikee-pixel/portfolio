@@ -69,9 +69,6 @@ p {
   line-height: 25px;
 }
 
-
-
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -445,6 +442,12 @@ section {
 .about .expertise-container .expertise-item img {
   width: 45px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about .expertise-container .expertise-item h6 {
+    line-height: 25px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -1031,6 +1034,7 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .contact .info .contact-item {
@@ -1169,6 +1173,13 @@ section {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .contact .info .contact-item {
+    width: 100%;
+    margin: 10px 0;
   }
 }
 
